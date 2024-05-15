@@ -45,9 +45,9 @@ $rand_keys = ($num_elements >= 10) ? array_rand($url_data, 10) : array_rand($url
                     <h1 id="title">Wanna Buy!</h1>
                 </div>
                 <ul>
-                    <li><a href="https://localhost/MyWebsite/home_demo.php"><button id="nb1">Home</button></a></li>
-                    <li><a href="https://localhost/MyWebsite/about_us.html"><button id="nb2">About Us!</button></a></li>
-                    <li><a href="https://localhost/MyWebsite/Login/Login.php"><button id="nb3">Login</button></a></li>
+                    <li><a href="home_demo.php"><button id="nb1">Home</button></a></li>
+                    <li><a href="about_us.html"><button id="nb2">About Us!</button></a></li>
+                    <li><a href="Login.php"><button id="nb3">Login</button></a></li>
                 </ul>
             </div>
         </nav>
