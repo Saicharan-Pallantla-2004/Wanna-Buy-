@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive team section</title>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+	text-decoration: none;
+    }
+    #img{
+        height: 270px;
+        width: 300px;
+    }
+    .team{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(#281c3e,#0f051d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .team-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .team-content img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    .center h1{
+        color: #fff;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .box h3{
+        font-size: 23px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    .box h5{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    .icons i{
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        margin: 0 8px;
+        transition: all .38s ease;
+    }
+    .icons i:hover{
+        transform: scale(1.2);
+    }
+    .box:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    @media(max-width: 1240px){
+        .team{
+            width: 100%;
+            height: auto;
+            padding: 90px 2%;
+        }
+        .center h1{
+            font-size: 3.2rem;
+        }
+    }
+    #img1{
+        height: 300px;
+        width: 250px;
+    }
+    </style>
+</head>
+<body>
+
+	<section class="team">
+		<div class="center">
+			<h1>Our Team</h1>
+		</div>
+
+		<div class="team-content">
+			<div class="box">
+				<img src="https://localhost/MyWebsite/Vani.jpg" id="img">
+				<h3>Vani</h3>
+				<h5>2133105H5</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/vani-thummalagunti-aa76bb247"><i class="ri-linkedin-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://localhost/MyWebsite/My%20pic.jpg" id="img">
+				<h3>Saicharan</h3>
+				<h5>21331A05D6</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/pallantla-saicharan-7b6483247/"><i class="ri-linkedin-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://localhost/MyWebsite/Sravanthi.jpeg" id="img">
+				<h3>Sravanthi</h3>
+				<h5>21331A05H0</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/sravanthi-sobha-baa701247"><i class="ri-linkedin-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://localhost/MyWebsite/Bhavya.jpg" id="img">
+				<h3>Bhavya</h3>
+				<h5>22335A0513</h5>
+				<div class="icons">
+					<a href="https://in.linkedin.com/in/matha-bhavya-7548662a5"><i class="ri-linkedin-fill"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</body>
+</html>

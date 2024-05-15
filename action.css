@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("HOME BG1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 5px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#nb1, #nb2,#nb3 {
+    width: 90px;
+    height: 35px;
+    background-color: rgb(4, 181, 4);
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-top: 20px;
+}
+
+#logoimg{
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 150px;
+}
+
+#nb1:hover{
+    box-shadow: 0 0 10px green,
+    0 0 50px green,
+    0 0 100px green,
+    0 0 400px green;
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+border-radius: 8px;
+}
+
+#nb2:hover{
+    box-shadow: 0 0 10px green,
+    0 0 50px green,
+    0 0 100px green,
+    0 0 400px green;
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+border-radius: 8px;
+}
+
+#nb3:hover{
+    box-shadow: 0 0 10px green,
+    0 0 50px green,
+    0 0 100px green,
+    0 0 400px green;
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+border-radius: 8px;
+}
+
+#title {
+    margin-left: 170px;
+    margin-top: -65px;
+    color: white;
+    font-size: 40px;
+}
+
+#nb1 {
+    margin-right: 25px;
+}
+
+#nb2 {
+    margin-right: 50px;
+}
+.container {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%; /* Adjusted the top property to move the container upwards */
+    left: 50%;
+    overflow: hidden;
+}
+.wrapper {
+    width: 500%; /* Adjusted width to cover all keyframes in the animation */
+    display: flex;
+    animation: slide 5s linear infinite; /* Set iteration count to infinite */
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translate(-100%);
+    }
+    60% {
+        transform: translate(-200%);
+    }
+    80% {
+        transform: translate(-300%);
+    }
+}
+#f1 {
+    margin-top: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(4, 181, 4);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    box-shadow: 0 0 5px rgb(4, 181, 4),
+                0 0 5px rgb(4, 181, 4),
+                0 0 10px rgb(4, 181, 4),
+                0 0 40px rgb(4, 181, 4);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
